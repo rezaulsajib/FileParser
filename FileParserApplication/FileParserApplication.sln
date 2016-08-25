@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileParserApplication", "FileParserApplication\FileParserApplication.csproj", "{0F09BC52-1CC2-45AC-BDF6-53BE508F83DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTransponderApplication", "FileParserApplication\FileTransponderApplication.csproj", "{0F09BC52-1CC2-45AC-BDF6-53BE508F83DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileParser", "FileParser\FileParser.csproj", "{C512DB7A-6FFA-4831-AA34-AB6022DC5333}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileTransponder", "FileParser\FileTransponder.csproj", "{C512DB7A-6FFA-4831-AA34-AB6022DC5333}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

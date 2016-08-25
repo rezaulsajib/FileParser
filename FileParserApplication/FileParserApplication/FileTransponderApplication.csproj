@@ -48,9 +48,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FileParser\FileParser.csproj">
+    <ProjectReference Include="..\FileParser\FileTransponder.csproj">
       <Project>{c512db7a-6ffa-4831-aa34-ab6022dc5333}</Project>
-      <Name>FileParser</Name>
+      <Name>FileTransponder</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
