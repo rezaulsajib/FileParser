@@ -7,19 +7,14 @@ using CsvHelper.Configuration;
 
 namespace FileParser
 {
-    public class DefaultTransponder: AbstractTransponder
+    public class CsvTransponder: AbstractTransponder
     {
        
-        public override void Read()
-        {
-           
-            Console.WriteLine("Reading file from local storage");
-           
-        }
+       
 
         public override void Parse()
         {
-            Console.WriteLine("Parsing file by default parser");
+            Console.WriteLine("Parsing file by csv parser");
            
         }
 

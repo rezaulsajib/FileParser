@@ -16,7 +16,7 @@ namespace FileParser
 
         public override void Save()
         {
-            Console.WriteLine("Saving Records in email");
+            Console.WriteLine("Saving Records in Database");
         }
     }
 }

@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractTransponder.cs" />
-    <Compile Include="DefaultTransponder.cs" />
+    <Compile Include="CsvTransponder.cs" />
     <Compile Include="ExcelEmailTransponder.cs" />
     <Compile Include="FileType.cs" />
     <Compile Include="DataRecord.cs" />
