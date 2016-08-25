@@ -40,11 +40,10 @@ namespace FileParserApplication
             Console.WriteLine("press q to quit");
             try
             {
-          
-                var inputStr = "";
+
+                var inputStr = Console.ReadLine();
                 while (inputStr!="q")
                 {
-                    inputStr = Console.ReadLine();
                     if (inputStr == null) continue;
                     var inputChar = inputStr.Split(',');
                     var source = Convert.ToInt32(inputChar[0]);
@@ -52,11 +51,12 @@ namespace FileParserApplication
                     var save = Convert.ToInt32(inputChar[2]);
                     var transponder = TransponderFactory.CreateTransponder(source, fileType, save);
                     transponder.Process();
+                    inputStr = Console.ReadLine();
                 }
             }
             catch (Exception exception)
             {
-                Console.WriteLine(exception.ToString());
+                Console.WriteLine(exception.Message);
             }
 
         }
@@ -69,7 +69,7 @@ namespace FileParserApplication
                 return new CsvTransponder();
             if (source == 2 && fileType == 2 && saveOption == 2)
                 return new ExcelEmailTransponder();
-            if (source == 2 && fileType == 3 && saveOption == 1)
+            if (source == 1 && fileType == 3 && saveOption == 1)
                 return new XmldbTransponder();
             throw new NotSupportedException("No supported Transponder Found");
         }
